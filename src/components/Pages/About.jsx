@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import img from './mkk.jpg'
 import SearchContainer from '../Search/SearchContainer';
 import Footer from '../Footer/Footer';
 import NavLinks from '../NavLinks/NavLinks'
@@ -64,14 +65,24 @@ function About() {
                     movieList.length ? <SearchContainer movieList={movieList} /> :
                         <div className="container ">
 
-                            <div className="card w-75 m-auto mt-3">
-                                <h4 className="text-center">About Me</h4>
+                            <div className="card m-auto mt-3 p-2">
 
-                                <p className="text-center">
+                            <h4 className="text-center p-2 w-75 my-3 bg-warning rounded-pill  m-auto">About Me</h4>
+ 
+                                <div className="row">
+                                <div className="col-md-6">
+                                <img src={img} alt="" className='w-100 h-100'/>
+                                </div>
+                                <div className=" col-md-6">
+                                <p className="text-center display-6 mt-4">
 
-                                    Hii,I am Mohit Kumar and I am a MERN Stack web Developer. I have developed this movie review site using TMDB Api which shows you details about latest movies.
+Hii Visitor, <br />My name is Mohit Kumar and I love to work with MERN Stack web technologies therefore,I have developed this movie review site for you using TMDB Api which shows you details about movies.
 
-                                </p>
+</p>
+                                </div>
+                                </div>
+
+                               
                             </div>
 
 
