@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Latest from './components/Pages/Latest/Latest'
 import TopRated from './components/Pages/TopRated/TopRated'
 import Home from './components/Home/Home'
