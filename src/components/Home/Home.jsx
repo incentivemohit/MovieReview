@@ -13,8 +13,7 @@ function Home() {
     const [searchBox, setSearchBox] = useState("");
     const [timeOutId, updateTimeOut] = useState("");
     const [movieList, setMovieList] = useState([])
-    const [loading, setLoading] = useState(false)
-
+   
 
     const fetchApi = async (string) => {
         await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&include_adult=false&query=${string}`)
@@ -78,18 +77,7 @@ function Home() {
             {
                   movieList.length ? 
 
-                  loading ?  <SearchContainer movieList={movieList} length={movieList.length} />:
-                        <div className="d-flex justify-content-center " style={{height:"80vh"}}>
-                        <div className="spinner-border" style={{width:"10rem",height:"10rem",marginTop:"15%"}} role="status">
-                    
-                          <span className="sr-only">Loading...</span>
-                          
-                        </div>
-                       
-                      </div>
-
-
-                  :               
+                   <SearchContainer movieList={movieList} length={movieList.length} />:           
                 <MultiSectionPage/>
 
             }
