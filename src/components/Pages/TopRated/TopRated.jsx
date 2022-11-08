@@ -92,8 +92,8 @@ useEffect(() => {
   
 
     {
-        movieList.length ? <SearchContainer movieList={movieList} /> :
-                        loading ? <TopRatedContainer getContent={getContent} length={movieList.length} /> :
+        movieList.length ? <SearchContainer movieList={movieList} length={movieList.length} /> :
+                        loading ? <TopRatedContainer getContent={getContent}  /> :
                         <div className="d-flex justify-content-center loading-wheel" style={{height:"80vh"}}>
                         <div className="spinner-border text-danger" style={{width:"10rem",height:"10rem"}} role="status">
                     

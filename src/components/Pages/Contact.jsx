@@ -64,7 +64,7 @@ function Contact() {
 
 
             {
-                movieList.length ? <SearchContainer movieList={movieList} /> :
+                movieList.length ? <SearchContainer movieList={movieList}  length={movieList.length}/> :
                     <div className="container-fluid m-auto" style={{height:"78vh"}}>
 
                         <div className="card w-75 m-auto align-items-center mt-3 p-5">

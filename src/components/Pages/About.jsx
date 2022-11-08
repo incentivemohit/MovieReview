@@ -70,7 +70,7 @@ function About() {
           
 
                 {
-                    movieList.length ? <SearchContainer movieList={movieList} /> :
+                    movieList.length ? <SearchContainer movieList={movieList} length={movieList.length} /> :
                         <div className="container-fluid m-auto">
 
                             <div className="card m-auto mt-3 p-2 w-75">
