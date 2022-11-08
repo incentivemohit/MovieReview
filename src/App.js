@@ -8,24 +8,31 @@ import About from './components/Pages/About'
 
 
 
+
 function App() {
   return (
     <>
 
 
-      <Router>
+<Router>
 
-        <Routes>
+<Routes>
 
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/toprated' element={<TopRated/>} />
-          <Route exact path='/latest' element={<Latest/>} />
-          <Route exact path='/contact' element={<Contact />} />
-          <Route exact path='/about' element={<About/>} />
+  <Route exact path='/' element={<Home />} />
+  <Route exact path='/toprated' element={<TopRated/>} />
+  <Route exact path='/latest' element={<Latest/>} />
+  <Route exact path='/contact' element={<Contact />} />
+  <Route exact path='/about' element={<About/>} />
+ 
 
-        </Routes>
 
-      </Router>
+</Routes>
+
+</Router>
+
+
+
+   
 
 
 

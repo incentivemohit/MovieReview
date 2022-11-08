@@ -1,5 +1,5 @@
 import React from 'react'
-import './LatestContainer.css'
+import '../PageContainer.css'
 import MovieCard from '../../MovieCard/MovieCard';
 
 

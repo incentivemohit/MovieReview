@@ -1,5 +1,5 @@
 import React from 'react'
-import './TopRatedContainer.css'
+import '../PageContainer.css'
 import MovieCard from '../../MovieCard/MovieCard';
 
 

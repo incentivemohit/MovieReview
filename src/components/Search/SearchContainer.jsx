@@ -23,6 +23,7 @@ function SearchContainer(props) {
 
                 {
                     movieList.map((data) => (
+                        
 
 
                         <div className="col">
@@ -32,7 +33,7 @@ function SearchContainer(props) {
                 
             }
 
-            <MultiSectionPage />
+           
 
         </>
     )

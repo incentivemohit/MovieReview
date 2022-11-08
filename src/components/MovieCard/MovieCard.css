@@ -32,7 +32,7 @@
     overflow: auto;
 }
 ::-webkit-scrollbar{
-    width: 8px;
+    width: 15px;
   
     border-radius: 5px 5px;
     background-color: rgb(5, 18, 29);

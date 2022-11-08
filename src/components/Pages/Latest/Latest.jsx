@@ -56,38 +56,43 @@ function Latest() {
     return (
         <>
 
-            <div className='container-fluid bg-dark pt-3'>
-                <div className="row header p-3">
+        <div className='container-fluid bg-dark pt-3 m-auto'>
+        <div className="row mb-2 pb-2 header">
 
-                    <div className="col col-md-3 ">
-                        <h3 className='movie-title p-1 text-white mx-4 '><i class="fa-solid fa-film"></i>MovieReview</h3>
+            {/* Logo and Name of Website*/}
+            <div className=" col  ">
+                <h2 className='movie-title text-white mx-4 '><i class="fa-solid fa-film"></i>MovieReview</h2>
+            </div>
+
+            {/* Search Bar*/}
+            <div className="col  ">
+                <div className="search d-flex "  >
+
+                    <div className="search-icon-box ">
+                        <i className=" search-icon fas fa-search"></i>
                     </div>
-
-                    <div className="col col-md-5 ">
-                        <div className="search d-flex "  >
-                            <div className="search-icon-box ">
-                                <i className=" search-icon fas fa-search"></i>
-                            </div>
-                            <input type="search" className='search-input rounded-right border-white border px-2' value={searchBox} onChange={searchHandle} style={{ width: "100%", height: "40px" }} placeholder='Search here...' />
-                        </div>
-                    </div>
-
-                    <div className="col col-md-4">
-
-                        <NavLinks />
-
-                    </div>
+                    <input type="search" className='search-input rounded-right  border-white border px-2' value={searchBox} onChange={searchHandle} style={{ width: "100%", height: "40px" }} placeholder='Search here...' />
                 </div>
             </div>
 
+            <div className="col ">
+                {/* Navigation Link component*/}
 
-            <div className="row mx-5">
+                <NavLinks />
+               
+            </div>
+
+
+        </div>
+    </div>
+
+
 
                 {
                     movieList.length ? <SearchContainer movieList={movieList} /> :
                         loading ? <LatestContainer getContent={getContent} /> :
-                        <div className="d-flex justify-content-center " style={{height:"80vh"}}>
-                        <div className="spinner-border text-danger" style={{width:"10rem",height:"10rem",marginTop:"15%"}} role="status">
+                        <div className="d-flex justify-content-center loading-wheel" style={{height:"80vh"}}>
+                        <div className="spinner-border text-danger" style={{width:"10rem",height:"10rem"}} role="status">
                     
                           <span className="sr-only">Loading...</span>
                           
@@ -99,7 +104,6 @@ function Latest() {
                 }
 
 
-            </div>
             <Footer />
         </>
     )
