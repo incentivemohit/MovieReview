@@ -89,7 +89,7 @@ function Latest() {
 
 
                 {
-                    movieList.length ? <SearchContainer movieList={movieList} /> :
+                    movieList.length ? <SearchContainer movieList={movieList} length={movieList.length} /> :
                         loading ? <LatestContainer getContent={getContent} /> :
                         <div className="d-flex justify-content-center loading-wheel" style={{height:"80vh"}}>
                         <div className="spinner-border text-danger" style={{width:"10rem",height:"10rem"}} role="status">
