@@ -15,6 +15,13 @@
     border-bottom-left-radius: 5px;
 }
 
+@media  screen and (min-width:768px) {
+   
+    .movie-title{
+        font-size: 27px;
+    }
+
+}
 
 
 @media  screen and (max-width:768px) {
@@ -25,14 +32,14 @@
 
     .movie-title{
         text-align: center;
-       
+        font-size: 40px;
     }
+
     
    .search{
     margin-bottom: 10px;
     margin-left: 10px;
    }
   
-   
-  
+
 }

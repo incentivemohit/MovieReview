@@ -38,12 +38,12 @@ function Home() {
         <>
 
 
-            <div className='container-fluid bg-dark pt-3 m-auto'>
+            <div className='container-fluid bg-dark pt-3 '>
                 <div className="row mb-2 pb-2 header">
 
                     {/* Logo and Name of Website*/}
                     <div className=" col  ">
-                        <h2 className='movie-title text-white mx-4 '><i class="fa-solid fa-film"></i>MovieReview</h2>
+                        <p className='movie-title text-white mx-4 '><i className="fa-solid fa-film movie-title-icon"></i>MovieReview</p>
                     </div>
 
                     {/* Search Bar*/}

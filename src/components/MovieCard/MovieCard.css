@@ -1,7 +1,7 @@
 .movie-card{
     position: relative;
     background-color: aqua;
-    margin:8px
+   
 }
 
 .movie-card .voting-section{
@@ -14,7 +14,7 @@
 
 .movie-detail-section{
     position: absolute;
-    top: 90%;
+    top: 92%;
     width: 100%;
     flex-direction: column;
 }

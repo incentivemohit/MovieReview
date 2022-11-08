@@ -1,15 +1,15 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './MovieCard.css'
+import "./CarouselCard.css"
 
 const getPosterPath = (poster_path) => {
   return `https://www.themoviedb.org/t/p/w220_and_h330_face/${poster_path}`;
 }
 
 
-function MovieCard(props) {
-  const { id, title, poster, rd, rating, overview, language } = props;
+function CarouselCard(props) {
+  const {  title, poster, rd, rating, overview, language } = props;
   const [show, setShow] = useState(false);
 
   const getOverview = () => {
@@ -23,7 +23,13 @@ function MovieCard(props) {
   return (
     <>
 
+
+
       {
+        /*
+        
+        
+              {
         show ?
 
           //Showing Detail of Movie
@@ -36,8 +42,6 @@ function MovieCard(props) {
               backgroundSize: "contain"
             }}
           >
-
-
 
             <div className="close-btn-section w-100 text-end ">
               <button onClick={closeBtn} className="rounded-pill bg-danger text-white w-25 mt-1">Close <i className="fas fa-close"></i></button>
@@ -62,10 +66,7 @@ function MovieCard(props) {
             </div>
 
           </div>
-
-
           :
-
           //Main Movie card
           <Link onClick={getOverview} >
 
@@ -81,26 +82,45 @@ function MovieCard(props) {
                 <p className="voting bg-warning h6 p-1 w-25 rounded-pill text-center mt-2  "> {rating}</p>
               </div>
 
-
               <div className=" movie-detail-section text-center m-auto">
-
                 <button className="movie-overview h5 rounded bg-success text-white border-warning p-3 m-auto w-100">Get Overview</button>
-
               </div>
-
 
             </div>
 
-
           </Link>
 
-
-
       }
+        
+        
+        */
+      }
+
+
+      <Link onClick={getOverview} >
+
+      <div className="carousel-movie-card  "
+        style={{
+          backgroundImage: `url(${getPosterPath(poster)}) `,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
+        }} >
+
+        <div className="voting-section w-100">
+          <p className="voting bg-warning h6 p-1 w-25 rounded-pill text-center mt-2  "> {rating}</p>
+        </div>
+
+        <div className=" carousel-movie-detail-section text-center m-auto">
+          <button className="movie-overview h5 rounded bg-success text-white border-warning p-3 m-auto w-100">Get Overview</button>
+        </div>
+
+      </div>
+
+    </Link>
 
 
     </>
   )
 }
 
-export default MovieCard
+export default CarouselCard

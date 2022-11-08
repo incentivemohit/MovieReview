@@ -1,0 +1,59 @@
+.carousel-movie-card{
+    position: relative;
+    background-color: aqua;
+   width: 230px;
+   height: 300px;
+   margin-bottom: 5rem;
+ }
+ 
+ .carousel-movie-card .voting-section{
+    position: absolute;
+    top: 0px;
+ }
+ .voting{
+    margin-left: 72%;
+ }
+ 
+ .carousel-movie-detail-section{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    flex-direction: column;
+ }
+ 
+ 
+ /*Review Card css*/
+ .review-card{
+    position: relative;
+ }
+ .review-card-section-1{
+    position: absolute;
+    top:6% ;
+ }
+ .overview-desc{   
+    overflow: auto;
+ }
+ ::-webkit-scrollbar{
+    width: 15px;
+  
+    border-radius: 5px 5px;
+    background-color: rgb(5, 18, 29);
+ }
+ .overview-desc::-webkit-scrollbar-thumb{
+ 
+    background-color: rgb(52, 165, 42);
+ }
+ 
+ .review-card-section-2{
+    position: absolute;
+    top:55% ;
+ }
+ 
+@media screen and (min-width:1200px) {
+    .carousel-movie-card{
+       width: 330px;
+       height: 400px;
+    }
+    
+}
+

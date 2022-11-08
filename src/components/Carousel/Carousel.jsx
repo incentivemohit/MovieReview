@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import MovieCard from '../MovieCard/MovieCard';
+import CarouselCard from './CarouselCard';
 
 
 const Carousel= () => {
@@ -39,7 +39,7 @@ const Carousel= () => {
 
             <SwiperSlide className='slide-card'>
 
-              <MovieCard key={data.id} title={data.title} poster={data.poster_path} rd={data.release_date} rating={data.vote_average} overview={data.overview} language={data.original_language}/>
+              <CarouselCard key={data.id} title={data.title} poster={data.poster_path} rd={data.release_date} rating={data.vote_average} overview={data.overview} language={data.original_language}/>
            
             </SwiperSlide>
             ))

@@ -38,7 +38,7 @@ function MultiSectionPage() {
                 {/* Top Rated Movies Section*/}
 
                 <h4 className='text-center py-2 bg-info mt-2'>Top-Rated Movies</h4>
-                <div className="row m-auto">
+                <div className="row ">
 
                     {
                         topRated.length ? topRated.map((data) => (
@@ -54,7 +54,7 @@ function MultiSectionPage() {
                 {/* Latest Movies Section*/}
 
                 <h4 className='text-center py-2 bg-info mt-2'>Latest Movies</h4>
-                <div className="row m-auto">
+                <div className="row ">
 
                     {
                         Latest.length ? Latest.map((data) => (
