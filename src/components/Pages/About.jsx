@@ -71,9 +71,9 @@ function About() {
 
                 {
                     movieList.length ? <SearchContainer movieList={movieList} /> :
-                        <div className="container ">
+                        <div className="container-fluid m-auto">
 
-                            <div className="card m-auto mt-3 p-2">
+                            <div className="card m-auto mt-3 p-2 w-75">
 
                             <h4 className="text-center p-2 w-75 my-3 bg-warning rounded-pill  m-auto">About Me</h4>
  

@@ -1,6 +1,5 @@
 .carousel-movie-card{
     position: relative;
-    background-color: aqua;
    width: 230px;
    height: 300px;
    margin-bottom: 5rem;
@@ -23,36 +22,59 @@
  
  
  /*Review Card css*/
- .review-card{
+ .carousel-review-card{
     position: relative;
+    width: 230px;
+    height: 300px;
+    margin-bottom: 5rem;
+    
+
  }
- .review-card-section-1{
+ .carousel-review-card-section-1{
     position: absolute;
-    top:6% ;
+    top: 8%;
+    font-size: 15px;
  }
- .overview-desc{   
-    overflow: auto;
- }
+.overview-desc{
+   height: 100px;
+   overflow: auto;
+}
+ .carousel-review-card-section-2{
+   position: absolute;
+   top:58% ;
+   font-size: 12px;
+   font-weight: 600px;
+}
+
  ::-webkit-scrollbar{
     width: 15px;
-  
     border-radius: 5px 5px;
-    background-color: rgb(5, 18, 29);
+    background-color: white;
  }
  .overview-desc::-webkit-scrollbar-thumb{
- 
-    background-color: rgb(52, 165, 42);
+background-color: green; 
  }
  
- .review-card-section-2{
-    position: absolute;
-    top:55% ;
- }
  
 @media screen and (min-width:1200px) {
     .carousel-movie-card{
-       width: 330px;
+       width: 300px;
        height: 400px;
+    }
+    .carousel-review-card{
+      width: 300px;
+      height: 400px;
+    }
+    .carousel-review-card-section-1{
+      font-size: 17px;
+      
+    }
+    .overview-desc{
+      height: 180px;
+    }
+    .carousel-review-card-section-2{
+      font-size: 15px;
+      top: 63%;
     }
     
 }

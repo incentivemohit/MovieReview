@@ -28,16 +28,8 @@ function MovieCard(props) {
 
           //Showing Detail of Movie
 
-          <div className=' card bg-warning  mt-2  mb-3 review-card'
-
-            style={{
-              width: "330px", height: "496px",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain"
-            }}
+          <div className=' mb-5 review-card '
           >
-
-
 
             <div className="close-btn-section w-100 text-end ">
               <button onClick={closeBtn} className="rounded-pill bg-danger text-white w-25 mt-1">Close <i className="fas fa-close"></i></button>
@@ -46,12 +38,12 @@ function MovieCard(props) {
 
             <div className="review-card-section-1 w-100">
               <p className='text-center h5  '>Overview</p>
-              <p className=' overview-desc' style={{ paddingLeft: "5px", height: "220px" }}>{overview}</p>
+              <p className='review-overview-desc' style={{ paddingLeft: "5px"}}>{overview}</p>
             </div>
 
 
             <div className="review-card-section-2 w-100">
-              <p className="text-center h5 mt-3">Movie Details</p>
+              <p className="text-center h5 ">Movie Details</p>
               <ul className="list-group">
 
                 <li className="list-group-item">Movie Title: {title}</li>
@@ -71,10 +63,9 @@ function MovieCard(props) {
 
             <div className="movie-card mb-5 "
               style={{
-                width: "330px", height: "496px",
                 backgroundImage: `url(${getPosterPath(poster)}) `,
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "contain"
+                backgroundSize: "cover"
               }} >
 
               <div className="voting-section w-100">
@@ -88,9 +79,7 @@ function MovieCard(props) {
 
               </div>
 
-
             </div>
-
 
           </Link>
 

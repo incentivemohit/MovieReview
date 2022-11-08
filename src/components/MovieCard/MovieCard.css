@@ -1,7 +1,8 @@
 .movie-card{
     position: relative;
-    background-color: aqua;
-   
+   width: 280px;
+   height: 380px;
+   margin-top: 20px;
 }
 
 .movie-card .voting-section{
@@ -14,7 +15,7 @@
 
 .movie-detail-section{
     position: absolute;
-    top: 92%;
+    top: 95%;
     width: 100%;
     flex-direction: column;
 }
@@ -23,33 +24,60 @@
 /*Review Card css*/
 .review-card{
     position: relative;
+    width: 280px;
+   height: 380px;
+
 }
 .review-card-section-1{
     position: absolute;
-    top:6% ;
+    top: 8%;
+    font-size: 15px;
 }
-.overview-desc{   
+.review-overview-desc{
+    height: 140px;
     overflow: auto;
-}
-::-webkit-scrollbar{
-    width: 15px;
-  
-    border-radius: 5px 5px;
-    background-color: rgb(5, 18, 29);
-}
-.overview-desc::-webkit-scrollbar-thumb{
-
-    background-color: rgb(52, 165, 42);
-}
+ }
 
 .review-card-section-2{
     position: absolute;
-    top:55% ;
+    top:58% ;
+    font-size: 12px;
+    font-weight: 800px;
 }
 
-@media screen and (max-width:900px) {
-    .movie-title-section{
-        position: absolute;
-        top: 79.5%;
-    }
+ ::-webkit-scrollbar{
+    width: 15px;
+    border-radius: 5px 5px;
+    background-color: white;
+ }
+ .review-overview-desc::-webkit-scrollbar-thumb{
+background-color: green; 
+ }
+ 
+
+@media screen and (min-width:1200px) {
+
+
+.movie-card{
+    width: 300px;
+    height: 400px;
+ }
+ .review-card{
+   width: 300px;
+   height: 400px;
+ }
+ .review-card-section-1{
+   font-size: 17px;
+   
+ }
+ .review-overview-desc{
+   height: 180px;
+ }
+ .review-card-section-2{
+   font-size: 15px;
+   top: 63%;
+ }
+
+
+
 }

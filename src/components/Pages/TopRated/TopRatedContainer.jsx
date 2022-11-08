@@ -4,33 +4,35 @@ import MovieCard from '../../MovieCard/MovieCard';
 
 
 
-function TopRatedContainer( props) {
+function TopRatedContainer(props) {
 
-    const {getContent}=props;
-  
+    const { getContent } = props;
+
 
     return (
         <>
-     
-<h4 className='text-center py-2 bg-info mt-2'>Top Rated Movies</h4>
+
+            <div className="container-fluid m-auto ">
+
+                <h4 className='text-center py-2 bg-info mt-2'>Top Rated Movies</h4>
 
 
-            <div className="row ">
+                <div className="row ">
 
-                {
-                    getContent.length ?  getContent.map((data) => (
-                 
-                     <div className="col">  
-                     <MovieCard id={data.id} title={data.title} poster={data.poster_path} rd={data.release_date} rating={data.vote_average} overview={data.overview} language={data.original_language}/>
-                    </div>))
-                       : "Data not found"
-    
-                }
+                    {
+                        getContent.length ? getContent.map((data) => (
+
+                            <div className="col">
+                                <MovieCard id={data.id} title={data.title} poster={data.poster_path} rd={data.release_date} rating={data.vote_average} overview={data.overview} language={data.original_language} />
+                            </div>))
+                            : "Data not found"
+
+                    }
+
+                </div>
 
             </div>
 
-
-      
 
 
         </>

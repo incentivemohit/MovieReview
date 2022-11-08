@@ -65,16 +65,16 @@ function Contact() {
 
             {
                 movieList.length ? <SearchContainer movieList={movieList} /> :
-                    <div className="container">
+                    <div className="container-fluid m-auto" style={{height:"78vh"}}>
 
-                        <div className="card w-75 m-auto mt-3">
+                        <div className="card w-75 m-auto align-items-center mt-3 p-5">
 
                             <h3 className="text-center">Contact Me</h3>
 
                             <ul className="list-group">
 
                                 <li className="list-group-item">Business Email: mohitkumar.e21@nsut.ac.in</li>
-                                <li className="list-group-item">Linkedin: https://www.linkedin.com/mohit-kumar
+                                <li className="list-group-item">Linkedin: https://www.linkedin.com/mohit-kumar-2325181b9
                                 </li>
 
                             </ul>
